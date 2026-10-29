@@ -16,7 +16,7 @@ int main() {
         for (int j = 0; j < m; j++) scanf("%f", &a[i][j]); // %f для float
 
     // Макс в столб
-    float max = -1e9;
+    float max = -10000000000;
     int mi = 0, mj = 1; 
     for (int j = 1; j < m; j += 2)
         for (int i = 0; i < n; i++)
@@ -37,7 +37,7 @@ int main() {
     
     printf("3. Итог:\n");
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) printf("%7.2f ", a[i][j]);
+        for (int j = 0; j < m; j++) printf("%f ", a[i][j]);
         printf("\n");
     }
 
